@@ -1,0 +1,11 @@
+menu "I2C Configuration"
+
+config MY_I2C
+	bool "MY I2C Support"
+	default n
+
+config DW_I2C
+	bool "DW I2C Support"
+	default n
+
+endmenu

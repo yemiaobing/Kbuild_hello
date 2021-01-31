@@ -1,0 +1,13 @@
+#
+# For a description of the syntax of this configuration file,
+# see Documentation/kbuild/kconfig-language.txt.
+#
+mainmenu "Kbuild hello Configuration"
+
+config SRCARCH
+	string
+	option env="SRCARCH"
+
+source "common/Kconfig"
+source "drivers/Kconfig"
+

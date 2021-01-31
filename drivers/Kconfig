@@ -1,0 +1,11 @@
+menu "Device Drivers"
+
+config I2C
+	bool "I2C Support"
+	default n
+
+if I2C
+source drivers/i2c/Kconfig
+endif
+
+endmenu
